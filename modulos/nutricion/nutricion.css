@@ -151,6 +151,50 @@
   }
 }
 
+.restricciones-panel {
+  margin-top: 1.5rem;
+}
+
+.restricciones-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.restriccion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 1rem;
+  border: 1px solid #dad9c4;
+  border-left: 5px solid #3d8e33;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.restriccion-check {
+  margin-top: 0.2rem;
+  accent-color: #3d8e33;
+}
+
+.restriccion-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.restriccion-info strong {
+  color: #2a1605;
+}
+
+.restriccion-info small {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 /* Alerta de alérgenos dentro de la tarjeta nutricional */
 .nutricion-panel .advertencia-alergeno {
   position: static;

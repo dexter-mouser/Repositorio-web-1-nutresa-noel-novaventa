@@ -84,8 +84,48 @@
     </section>
 
     <!--2-->
-    <!--3-->
-    <!--4-->
+
+    <section class="bloque-modulo nutricion-panel restricciones-panel" aria-labelledby="titulo-restricciones">
+      <h2 id="titulo-restricciones">Restricciones alimentarias</h2>
+      <p class="nutricion-ayuda">
+        Marca las que apliquen. Puedes cambiarlas cuando quieras.
+      </p>
+
+      <div class="restricciones-lista">
+        <label class="restriccion-item">
+          <input type="checkbox" class="restriccion-check" data-restriccion="sin_lactosa" checked />
+          <span class="restriccion-info">
+            <strong>Sin lactosa</strong>
+            <small>Sin productos lácteos ni derivados de la leche.</small>
+          </span>
+        </label>
+
+        <label class="restriccion-item">
+          <input type="checkbox" class="restriccion-check" data-restriccion="vegetariano" />
+          <span class="restriccion-info">
+            <strong>Vegetariano</strong>
+            <small>Sin carne ni pescado; los productos vegetales sí.</small>
+          </span>
+        </label>
+
+        <label class="restriccion-item">
+          <input type="checkbox" class="restriccion-check" data-restriccion="bajo_sodio" checked />
+          <span class="restriccion-info">
+            <strong>Bajo en sodio</strong>
+            <small>Limita el sodio por porción a un máximo de 500 mg.</small>
+          </span>
+        </label>
+
+        <label class="restriccion-item">
+          <input type="checkbox" class="restriccion-check" data-restriccion="sin_gluten" />
+          <span class="restriccion-info">
+            <strong>Sin gluten</strong>
+            <small>Sin harinas de trigo, cebada ni centeno.</small>
+          </span>
+        </label>
+      </div>
+    </section>
+
     <div class="Alergenos-titulo">
       <div class="Alergenos-titulo">
         <button class="btn btn-secundario Alergeno-btn" data-alergeno="gluten"> Gluten / Trigo </button>
@@ -109,6 +149,6 @@
   <script src="../../data/platos.js"></script>
   <script src="servicio.js"></script>
   <script src="infoNutricion.js"></script>
+  <script src="restricciones.js"></script>
 </body>
-
 </html>
