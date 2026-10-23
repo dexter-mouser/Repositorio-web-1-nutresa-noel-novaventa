@@ -30,6 +30,7 @@
     <section class="bloque-modulo nutricion-panel" aria-labelledby="titulo-plato">
 
       <h2 id="titulo-plato">Selecciona un plato</h2>
+      <div id="advertenciaAlergeno" class="advertencia-alergeno" role="alert" aria-live="assertive" hidden></div>
 
       <label for="platoSelect" class="nutricion-label">Plato</label>
       <select id="platoSelect" aria-describedby="nutricion-estado">
@@ -86,11 +87,13 @@
     <!--3-->
     <!--4-->
     <div class="Alergenos-titulo">
-      <button class="Alergeno-btn" data-alergeno="gluten"> Gluten / Trigo </button>
-      <button class="Alergeno-btn" data-alergeno="lacteos"> lacteos </button>
-      <button class="Alergeno-btn" data-alergeno="Mani"> Maní / Cacahuates </button>
-      <button class="Alergeno-btn" data-alergeno="Mariscos"> Mariscos </button>
-      <button class="Alergeno-btn" data-alergeno="Huevo"> Huevo </button>
+      <div class="Alergenos-titulo">
+        <button class="btn btn-secundario Alergeno-btn" data-alergeno="gluten"> Gluten / Trigo </button>
+        <button class="btn btn-secundario Alergeno-btn" data-alergeno="lacteos"> Lácteos </button>
+        <button class="btn btn-secundario Alergeno-btn" data-alergeno="Mani"> Maní / Cacahuates </button>
+        <button class="btn btn-secundario Alergeno-btn" data-alergeno="Mariscos"> Mariscos </button>
+        <button class="btn btn-secundario Alergeno-btn" data-alergeno="Huevo"> Huevo </button>
+      </div>
     </div>
   </main>
 
