@@ -194,6 +194,18 @@
   font-size: 0.85rem;
   line-height: 1.4;
 }
+.nutricion-perfil-error {
+  margin: 1rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--rojo);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--rojo);
+}
+
+.nutricion-perfil-error[hidden] {
+  display: none;
+}
 
 /* Chips del perfil alimentario */
 .nutricion-perfil-lista {

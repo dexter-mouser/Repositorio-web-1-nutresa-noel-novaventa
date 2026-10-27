@@ -91,55 +91,13 @@
         Marca las que apliquen. Puedes cambiarlas cuando quieras.
       </p>
 
-      <div class="restricciones-lista">
-        <ul class="nutricion-perfil-lista" aria-label="Restricciones y preferencias">
-          <li>
-            <button type="button" class="nutricion-perfil-chip nutricion-perfil-chip--activo" aria-pressed="true">Sin
-              lactosa</button>
-          </li>
-          <li>
-            <button type="button" class="nutricion-perfil-chip" aria-pressed="false">Vegetariano</button>
-          </li>
-          <li>
-            <button type="button" class="nutricion-perfil-chip nutricion-perfil-chip--activo" aria-pressed="true">Bajo
-              en sodio</button>
-          </li>
-          <li>
-            <button type="button" class="nutricion-perfil-chip" aria-pressed="false">Sin gluten</button>
-          </li>
-        </ul>
-        <label class="restriccion-item">
-          <input type="checkbox" class="restriccion-check" data-restriccion="sin_lactosa" checked />
-          <span class="restriccion-info">
-            <strong>Sin lactosa</strong>
-            <small>Sin productos lácteos ni derivados de la leche.</small>
-          </span>
-        </label>
+         <p class="nutricion-ayuda">
+        Marca las que apliquen. Puedes cambiarlas cuando quieras.
+      </p>
 
-        <label class="restriccion-item">
-          <input type="checkbox" class="restriccion-check" data-restriccion="vegetariano" />
-          <span class="restriccion-info">
-            <strong>Vegetariano</strong>
-            <small>Sin carne ni pescado; los productos vegetales sí.</small>
-          </span>
-        </label>
-
-        <label class="restriccion-item">
-          <input type="checkbox" class="restriccion-check" data-restriccion="bajo_sodio" checked />
-          <span class="restriccion-info">
-            <strong>Bajo en sodio</strong>
-            <small>Limita el sodio por porción a un máximo de 500 mg.</small>
-          </span>
-        </label>
-
-        <label class="restriccion-item">
-          <input type="checkbox" class="restriccion-check" data-restriccion="sin_gluten" />
-          <span class="restriccion-info">
-            <strong>Sin gluten</strong>
-            <small>Sin harinas de trigo, cebada ni centeno.</small>
-          </span>
-        </label>
-      </div>
+      <p id="nutricion-perfil-error" class="nutricion-perfil-error" role="alert" hidden></p>
+      <ul id="nutricion-perfil-lista" class="nutricion-perfil-lista" aria-label="Restricciones y preferencias"></ul>
+    </section>
     </section>
 
     <div class="Alergenos-titulo">
