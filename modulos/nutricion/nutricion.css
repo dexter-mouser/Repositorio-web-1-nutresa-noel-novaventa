@@ -195,6 +195,64 @@
   line-height: 1.4;
 }
 
+/* Chips del perfil alimentario */
+.nutricion-perfil-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estado inactivo */
+.nutricion-perfil-chip {
+  min-height: 44px;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--texto);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.nutricion-perfil-chip:hover {
+  background: var(--crema-2);
+}
+
+.nutricion-perfil-chip:focus-visible {
+  outline: 3px solid var(--verde);
+  outline-offset: 2px;
+}
+
+/* Estado activo */
+.nutricion-perfil-chip--activo {
+  border-color: var(--verde-hondo);
+  background: var(--verde-hondo);
+  color: var(--card);
+}
+
+.nutricion-perfil-chip--activo:hover {
+  background: var(--verde-noche);
+}
+
+/* La marca ✓ evita depender solo del color */
+.nutricion-perfil-chip--activo::before {
+  content: "\2713";
+  content: "\2713" / "";
+  margin-right: 0.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nutricion-perfil-chip {
+    transition: none;
+  }
+}
+
 /* Alerta de alérgenos dentro de la tarjeta nutricional */
 .nutricion-panel .advertencia-alergeno {
   position: static;
