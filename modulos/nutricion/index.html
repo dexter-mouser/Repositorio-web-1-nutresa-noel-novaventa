@@ -92,6 +92,22 @@
       </p>
 
       <div class="restricciones-lista">
+        <ul class="nutricion-perfil-lista" aria-label="Restricciones y preferencias">
+          <li>
+            <button type="button" class="nutricion-perfil-chip nutricion-perfil-chip--activo" aria-pressed="true">Sin
+              lactosa</button>
+          </li>
+          <li>
+            <button type="button" class="nutricion-perfil-chip" aria-pressed="false">Vegetariano</button>
+          </li>
+          <li>
+            <button type="button" class="nutricion-perfil-chip nutricion-perfil-chip--activo" aria-pressed="true">Bajo
+              en sodio</button>
+          </li>
+          <li>
+            <button type="button" class="nutricion-perfil-chip" aria-pressed="false">Sin gluten</button>
+          </li>
+        </ul>
         <label class="restriccion-item">
           <input type="checkbox" class="restriccion-check" data-restriccion="sin_lactosa" checked />
           <span class="restriccion-info">
@@ -148,6 +164,7 @@
   <script src="../../assets/js/layout.js"></script>
   <script src="../../data/platos.js"></script>
   <script src="servicio.js"></script>
+  <script src="nutricion-perfil.js"></script>
   <script src="infoNutricion.js"></script>
   <script src="restricciones.js"></script>
 </body>
